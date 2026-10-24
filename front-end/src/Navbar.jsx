@@ -1,3 +1,4 @@
+import { Button } from "bootstrap/dist/js/bootstrap.bundle.min";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
@@ -41,6 +42,21 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
+
+            <button className="btn bg-transparent border-0" to="#">
+              <i className="bi bi-filter fs-4"> </i>
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn border-0" type="submit">
+                <i className="bi bi-search"></i>
+              </button>
+            </form>
           </div>
         </div>
       </nav>
